@@ -8,506 +8,239 @@
 </div>
  <!--Loader-->               
                 
-
 <!--Slider-->
 <div class="rev_slider_wrapper">
-  <div id="rev_overlaped" class="rev_slider"  data-version="5.0">
+  <div id="rev_slider_third" class="rev_slider"  data-version="5.0">
     <ul>
-      <!-- SLIDE -->
+      <!-- SLIDE  -->
       <li data-transition="fade">
-        <img src="images/home1-banner1.jpg" alt="" data-bgposition="center center" data-bgfit="cover" class="rev-slidebg">							
-      </li>
-      <li data-transition="fade">
-        <img src="images/home1-banner2.jpg" alt="" data-bgposition="center center" data-bgfit="cover" class="rev-slidebg">							
-      </li>
-      <li data-transition="fade">
-        <img src="images/home1-banner3.jpg" alt="" data-bgposition="center center" data-bgfit="cover" class="rev-slidebg">							
-      </li>
-      <div class="tp-static-layers">
-        <div class="tp-caption tp-static-layer" 
-          id="slide-37-layer-2" 
-          data-x="['left','left','left','left']" data-hoffset="['50','50','50','50']" 
-          data-y="['bottom','bottom','bottom','bottom']" data-voffset="['230','180','150','100']"  
-          data-whitespace="nowrap"
-          data-visibility="['on','on','on','on']"
-          data-fontsize="['48','48','28','28']"
-          data-start="500" 
-          data-responsive_offset="on"
-          data-basealign="slide" 
-          data-startslide="0" 
-          data-endslide="5" 
-          style="z-index: 5;">
-          <h1><span class="t_white">We Can Find just Right <br>Property for You.</span></h1>
-        </div>
-        <div class="tp-caption tp-static-layer" 
-          id="slide-37-layer-2" 
-          data-x="['left','left','left','left']" data-hoffset="['50','50','50','50']" 
-          data-y="['bottom','bottom','bottom','bottom']" data-voffset="['150','100','120','120']" 
-          data-whitespace="nowrap"
-          data-visibility="['on','on','on','on']"
-          data-start="500" 
-          data-basealign="slide" 
-          data-startslide="0" 
-          data-endslide="5" 
-          style="z-index: 5;">
-          <p class="t_white">We Deal with Different kinds of Properties No matter you need a House, 
-            an Apartment or garage. <br> You’ll find a good option on our Theme.
+        <img src="images/home3-banner1.jpg" alt="" data-bgposition="center center" data-bgfit="cover">
+        <div class="black-caption tp-caption tp-resizeme"
+         data-start="1300"
+          data-x="['left','left','center','center']" data-hoffset="['0','0','0','15']" 
+          data-y="['center','center','center','center']" data-voffset="['0','0','0','0']" 
+          data-responsive_offset="on" 
+          data-transform_idle="o:1;"
+          data-transform_in="x:-50px;opacity:0;s:2000;e:Power3.easeOut;" 
+		  data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;">
+          <div class="price">For Rent</div>
+          <h2>Family House in Hudson</h2>
+          <p class="bottom30">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam power 
+            <br> nonummy nibh...
           </p>
+          <div class="property_meta"> 
+            <span><i class="icon-select-an-objecto-tool"></i>4800 sq ft</span> 
+            <span><i class="icon-bed"></i>3 Bedrooms</span> 
+            <span><i class="icon-pool-stairs"></i>Swimming Pool</span> 
+          </div>
+          <div class="property_meta bottom30"> 
+            <span><i class="icon-garage"></i>1 Garage</span>
+            <span><i class="icon-safety-shower"></i>2 bathrooms</span>
+          </div>
+          <div class="bottom row">
+            <div class="col-sm-6"><span> <i class="icon-icons74"></i>Bayonne, New Jersey</span></div>
+            <div class="col-sm-6"><span>$8,600 Per Month -<small> Apartment</small></span></div>
+          </div>
         </div>
-        <div class="tp-caption tp-static-layer" 
-          id="slide-37-layer-2" 
-          data-x="['left','left','left','left']" data-hoffset="['50','50','50','50']" 
-          data-y="['bottom','bottom','bottom','bottom']" data-voffset="['60','60','60','60']" 
-          data-whitespace="nowrap"
-          data-visibility="['on','on','on','on']"
-          data-start="500" 
-          data-basealign="slide" 
-          data-startslide="0" 
-          data-endslide="5" 
-          style="z-index: 5;"><a href="listing1.html" class="btn-white border_radius uppercase">view Properties</a>
+      </li>
+      <li data-transition="fade">
+        <img src="images/home3-banner2.jpg" alt="" data-bgposition="center center" data-bgfit="cover">
+        <div class="black-caption tp-caption tp-resizeme"
+          data-x="['left','left','center','center']" data-hoffset="['0','0','0','15']" 
+          data-y="['center','center','center','center']" data-voffset="['0','0','0','0']" 
+          data-responsive_offset="on"
+          data-start="1300"
+          data-transform_idle="o:1;"
+          data-transform_in="x:-50px;opacity:0;s:2000;e:Power3.easeOut;" 
+		  data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" >
+          <div class="price">For Rent</div>
+          <h2>Family House in Hudson</h2>
+          <p class="bottom30">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam power 
+            <br> nonummy nibh...
+          </p>
+          <div class="property_meta"> 
+            <span><i class="icon-select-an-objecto-tool"></i>4800 sq ft</span> 
+            <span><i class="icon-bed"></i>3 Bedrooms</span> 
+            <span><i class="icon-pool-stairs"></i>Swimming Pool</span> 
+          </div>
+          <div class="property_meta bottom30"> 
+            <span><i class="icon-garage"></i>1 Garage</span>
+            <span><i class="icon-safety-shower"></i>2 bathrooms</span>
+          </div>
+          <div class="bottom row">
+            <div class="col-sm-6"><span> <i class="icon-icons74"></i>Bayonne, New Jersey</span></div>
+            <div class="col-sm-6"><span>$8,600 Per Month - Apartment</span></div>
+          </div>
         </div>
-      </div>
+      </li>
+      <li data-transition="fade">
+        <img src="images/home3-banner3.jpg" alt="" data-bgposition="center center" data-bgfit="cover">
+        <div class="black-caption tp-caption tp-resizeme"
+          data-x="['left','left','center','center']" data-hoffset="['0','0','0','15']" 
+          data-y="['center','center','center','center']" data-voffset="['0','0','0','0']" 
+          data-responsive_offset="on"
+           data-start="1300"
+          data-transform_idle="o:1;"
+          data-transform_in="x:-50px;opacity:0;s:2000;e:Power3.easeOut;" 
+		  data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" >
+          <div class="price">For Rent</div>
+          <h2>Family House in Hudson</h2>
+          <p class="bottom30">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam power 
+            <br> nonummy nibh...
+          </p>
+          <div class="property_meta"> 
+            <span><i class="icon-select-an-objecto-tool"></i>4800 sq ft</span> 
+            <span><i class="icon-bed"></i>3 Bedrooms</span> 
+            <span><i class="icon-pool-stairs"></i>Swimming Pool</span> 
+          </div>
+          <div class="property_meta bottom30"> 
+            <span><i class="icon-garage"></i>1 Garage</span>
+            <span><i class="icon-safety-shower"></i>2 bathrooms</span>
+          </div>
+          <div class="bottom row">
+            <div class="col-sm-6"><span> <i class="icon-icons74"></i>Bayonne, New Jersey</span></div>
+            <div class="col-sm-6"><span>$8,600 Per Month - Apartment</span></div>
+          </div>
+        </div>
+      </li>
     </ul>
   </div>
+  <!-- END REVOLUTION SLIDER -->
 </div>
-<!--Slider ends-->
 
 
-<!--Header-->
-<div id="mainMenuBarAnchor"></div>
-<header class="white_header">
-  <nav class="navbar navbar-default bootsnav">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="attr-nav">
-            <div class="upper-column info-box first">
-              <div class="icons"><i class="icon-telephone114"></i></div>
-              <ul>
-                <li><strong>Phone Number</strong></li>
-                <li>+1 900 234 567 - 68</li>
-              </ul>
-            </div>
-          </div>
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-            <i class="fa fa-bars"></i>
-            </button>
-            <a class="navbar-brand" href="index6.html"><img src="images/logo.png" class="logo" alt=""></a>
-          </div>
-          <div class="collapse navbar-collapse" id="navbar-menu">
-            <ul class="nav navbar-nav navbar-right" data-in="fadeIn" data-out="fadeOut">
-              <li class="dropdown active">
-                <a href="#." class="dropdown-toggle" data-toggle="dropdown">Home </a>
-                <ul class="dropdown-menu">
-                  <li><a href="index.html">Home Style 1</a></li>
-                  <li><a href="index2.html">Home Style 2</a></li>
-                  <li><a href="index3.html">Home Style 3</a></li>
-                  <li><a href="index4.html">Home Style 4</a></li>
-                  <li> <a href="index5.html">Home Style 5</a></li>
-                  <li> <a href="index6.html">Home Style 6</a></li>
-                  <li> <a href="index7.html">Home Style 7</a></li>
-                  <li> <a href="index8.html">Home Style 8</a></li>
-                  <li> <a href="index9.html">Home Style 9</a></li>
-                  <li> <a href="fullscreen.html">Home Fullscreen<span>new</span></a></li>
-                </ul>
-              </li>
-              <li class="dropdown megamenu-fw">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Listing</a>
-                <ul class="dropdown-menu megamenu-content" role="menu">
-                  <li>
-                    <div class="row">
-                      <div class="col-menu col-md-3">
-                        <h5 class="title">PROPERTIES LIST</h5>
-                        <div class="content">
-                          <ul class="menu-col">
-                            <li><a href="listing1.html">Properties List</a></li>
-                            <li><a href="index7.html">Single Property</a></li>
-                            <li><a href="listing2.html">Search by City</a></li>
-                            <li><a href="listing5.html">Search by Category</a></li>
-                            <li><a href="listing3.html">Search by Type</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="col-menu col-md-9">
-                        <h5 class="title bottom20">PROPERTIES LIST</h5>
-                        <div class="row">
-                          <div id="nav_slider" class="owl-carousel">
-                            <div class="item">
-                              <div class="image bottom15"> 
-                                <img src="images/nav-slider1.jpg" alt="Featured Property"> 
-                                <span class="nav_tag yellow text-uppercase">for rent</span>
-                              </div>
-                              <h4><a href="property_detail1.html">Park Avenue Apartment</a></h4>
-                              <p>Towson London, MR 21501</p>
-                            </div>
-                            <div class="item">
-                              <div class="image bottom15"> 
-                                <img src="images/nav-slider2.jpg" alt="Featured Property"> 
-                                <span class="nav_tag yellow text-uppercase">for rent</span>
-                              </div>
-                              <h4><a href="property_detail2.html">Park Avenue Apartment</a></h4>
-                              <p>Towson London, MR 21501</p>
-                            </div>
-                            <div class="item">
-                              <div class="image bottom15"> 
-                                <img src="images/nav-slider3.jpg" alt="Featured Property"> 
-                                <span class="nav_tag yellow text-uppercase">for rent</span>
-                              </div>
-                              <h4><a href="property_detail3.html">Park Avenue Apartment</a></h4>
-                              <p>Towson London, MR 21501</p>
-                            </div>
-                            <div class="item">
-                              <div class="image bottom15"> 
-                                <img src="images/nav-slider1.jpg" alt="Featured Property"> 
-                                <span class="nav_tag yellow text-uppercase">for rent</span>
-                              </div>
-                              <h4><a href="property_detail1.html">Park Avenue Apartment</a></h4>
-                              <p>Towson London, MR 21501</p>
-                            </div>
-                            <div class="item">
-                              <div class="image bottom15"> 
-                                <img src="images/nav-slider2.jpg" alt="Featured Property"> 
-                                <span class="nav_tag yellow text-uppercase">for rent</span>
-                              </div>
-                              <h4><a href="property_detail2.html">Park Avenue Apartment</a></h4>
-                              <p>Towson London, MR 21501</p>
-                            </div>
-                            <div class="item">
-                              <div class="image bottom15"> 
-                                <img src="images/nav-slider3.jpg" alt="Featured Property"> 
-                                <span class="nav_tag yellow text-uppercase">for rent</span>
-                              </div>
-                              <h4><a href="property_detail3.html">Park Avenue Apartment</a></h4>
-                              <p>Towson London, MR 21501</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-              <li class="dropdown megamenu-fw">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Properties</a>
-                <ul class="dropdown-menu megamenu-content bg" role="menu">
-                  <li>
-                    <div class="row">
-                      <div class="col-menu col-md-3">
-                        <h5 class="title">PROPERTY LISTINGS</h5>
-                        <div class="content">
-                          <ul class="menu-col">
-                            <li><a href="listing1.html">List Style 1</a></li>
-                            <li><a href="listing2.html">List Style 2</a></li>
-                            <li><a href="listing3.html">List Style 3</a></li>
-                            <li><a href="listing4.html">List Style 4</a></li>
-                            <li><a href="listing5.html">List Style 5</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="col-menu col-md-3">
-                        <h5 class="title">PROPERTY LISTINGS</h5>
-                        <div class="content">
-                          <ul class="menu-col">
-                            <li><a href="listing6.html">List Style 5</a></li>
-                            <li><a href="listing7.html">List Style 6</a></li>
-                            <li><a href="listing1.html">Search by City</a></li>
-                            <li><a href="listing2.html">Search by Category</a></li>
-                            <li><a href="listing3.html">Search by Type</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="col-menu col-md-3">
-                        <h5 class="title">PROPERTY DETAIL</h5>
-                        <div class="content">
-                          <ul class="menu-col">
-                            <li><a href="property_detail1.html">Property Detail 1</a></li>
-                            <li><a href="property_detail2.html">Property Detail 2</a></li>
-                            <li><a href="property_detail3.html">Property Detail 3</a></li>
-                            <li><a href="index7.html">Single Property</a></li>
-                            <li><a href="listing4.html">Search by Type</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="col-menu col-md-3">
-                        <h5 class="title">OTHER PAGES</h5>
-                        <div class="content">
-                          <ul class="menu-col">
-                            <li><a href="favorite_properties.html">Favorite Properties</a></li>
-                            <li><a href="agent_profile.html">Agent Profile</a></li>
-                            <li><a href="404.html">404 Error</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="testimonial.html">Testimonials</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a href="#." class="dropdown-toggle" data-toggle="dropdown">Features </a>
-                <ul class="dropdown-menu">
-                  <li class="dropdown">
-                    <a href="#." class="dropdown-toggle" data-toggle="dropdown">News</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="news.html">news Style1</a></li>
-                      <li><a href="news2.html">news Style2<span>new</span></a></li>
-                      <li><a href="news3.html">news Style3<span>new</span></a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a href="#." class="dropdown-toggle" data-toggle="dropdown">Property Agents</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="agent1.html">Agent Style1</a></li>
-                      <li><a href="agent2.html">Agent Style2</a></li>
-                      <li><a href="agent3.html">Agent Style3<span>new</span></a></li>
-                      <li><a href="agent4.html">Agent Style4<span>new</span></a></li>
-                      <li><a href="agent5.html">Agent Style5<span>new</span></a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a href="#." class="dropdown-toggle" data-toggle="dropdown">Agetn Profile Styles</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="agent_profile.html">Agent Profile 1</a></li>
-                      <li><a href="agent_profile2.html">Agent Profile 2</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                  <a href="#." class="dropdown-toggle" data-toggle="dropdown">Testimonials</a>
-                  <ul class="dropdown-menu">
-                      <li><a href="testimonial.html">Style 1</a></li>
-                      <li><a href="testimonial2.html">Style 2<span>new</span></a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                  <a href="#." class="dropdown-toggle" data-toggle="dropdown">FAQ's</a>
-                  <ul class="dropdown-menu">
-                      <li><a href="faq.html">Style 1</a></li>
-                      <li><a href="faq2.html">Style 2<span>new</span></a></li>
-                    </ul>
-                  </li>
-                  <li><a href="favorite_properties.html">Favorite Properties</a></li>
-                  <li class="dropdown">
-                  <a href="#." class="dropdown-toggle" data-toggle="dropdown">404 Error</a>
-                  <ul class="dropdown-menu">
-                      <li><a href="404.html">404 Error 1</a></li>
-                      <li><a href="404-2.html">404 Error 2<span>new</span></a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li><a href="contact.html">Contact Us</a></li>
-              <li><a href="#.">Buy Now</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-</header>
-<!--Header Ends-->
-
-
-
-
-<button type="button" class="form_opener"><i class="fa fa-bars"></i></button>
-<div class="tp_overlay">
-  <div class="topbar clearfix">
-    <ul class="breadcrumb_top">
-      <li><a href="favorite_properties.html"><i class="icon-icons43"></i>Favorites</a></li>
-      <li><a href="submit_property.html"><i class="icon-icons215"></i>Submit Property</a></li>
-      <li><a href="my_properties.html"><i class="icon-icons215"></i>My Property</a></li>
-      <li><a href="profile.html"><i class="icon-icons230"></i>Profile</a></li>
-      <li><a href="login.html"><i class="icon-icons179"></i>Login / Register</a></li>
-      <li class="last-icon"><i class="icon-icons215"></i></li>
-    </ul>
-  </div>
-  
-  <form class="callus top30 clearfix centered">
-  <h2 class="text-uppercase t_white bottom20 text-center">advanced search</h2>
+<!--Advance Search-->
+<section class="property-query-area bg_light">
+  <div class="container">
     <div class="row">
-      <div class="col-sm-6">
-        <div class="single-query bottom15">
-          <input type="text" class="keyword-input" placeholder="Keyword (e.g. 'office')">
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="single-query bottom15">
-          <div class="intro">
-            <select>
-              <option selected="" value="any">Location</option>
-              <option>All areas</option>
-              <option>Bayonne </option>
-              <option>Greenville</option>
-              <option>Manhattan</option>
-              <option>Queens</option>
-              <option>The Heights</option>
-            </select>
+      <form class="callus">
+        <div class="col-md-3 col-sm-6">
+          <div class="single-query form-group">
+            <input type="text" class="keyword-input" placeholder="Keyword (e.g. 'office')">
           </div>
         </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="single-query bottom15">
-          <div class="intro">
-            <select>
-              <option class="active">Property Type</option>
-              <option>All areas</option>
-              <option>Bayonne </option>
-              <option>Greenville</option>
-              <option>Manhattan</option>
-              <option>Queens</option>
-              <option>The Heights</option>
-            </select>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="single-query bottom15">
-          <div class="intro">
-            <select>
-              <option class="active">Property Status</option>
-              <option>All areas</option>
-              <option>Bayonne </option>
-              <option>Greenville</option>
-              <option>Manhattan</option>
-              <option>Queens</option>
-              <option>The Heights</option>
-            </select>
-          </div>
-        </div>
-      </div>
-      <div class="search-2">
-        <div class="col-md-3 col-sm-6 col-xs-6">
-          <div class="single-query bottom15">
+        <div class="col-md-3 col-sm-6">
+          <div class="single-query form-group">
             <div class="intro">
               <select>
-                <option class="active">Min Beds</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
+                <option selected="" value="any">Location</option>
+                <option>All areas</option>
+                <option>Bayonne </option>
+                <option>Greenville</option>
+                <option>Manhattan</option>
+                <option>Queens</option>
+                <option>The Heights</option>
               </select>
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6 col-xs-6">
-          <div class="single-query bottom15">
+        <div class="col-md-3 col-sm-6">
+          <div class="single-query form-group">
             <div class="intro">
               <select>
-                <option class="active">Min Baths</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
+                <option class="active">Property Type</option>
+                <option>All areas</option>
+                <option>Bayonne </option>
+                <option>Greenville</option>
+                <option>Manhattan</option>
+                <option>Queens</option>
+                <option>The Heights</option>
               </select>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-6">
-        <div class="single-query bottom15">
-          <input type="text" class="keyword-input" placeholder="Min Area (sq ft)">
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-6">
-        <div class="single-query bottom15">
-          <input type="text" class="keyword-input" placeholder="Max Area (sq ft)">
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-8 col-sm-8 col-xs-8 bottom15">
-        <div class="single-query-slider">
-          <div class="clearfix top20">
-            <label class="pull-left">Price Range:</label>
-            <div class="price text-right">
-              <span>$</span>
-              <div class="leftLabel"></div>
-              <span>to $</span>
-              <div class="rightLabel"></div>
+        <div class="col-md-3 col-sm-6">
+          <div class="single-query form-group">
+            <div class="intro">
+              <select>
+                <option class="active">Property Status</option>
+                <option>All areas</option>
+                <option>Bayonne </option>
+                <option>Greenville</option>
+                <option>Manhattan</option>
+                <option>Queens</option>
+                <option>The Heights</option>
+              </select>
             </div>
           </div>
-          <div data-range_min="0" data-range_max="1500000" data-cur_min="0" data-cur_max="1500000" class="nstSlider">
-            <div class="bar"></div>
-            <div class="leftGrip"></div>
-            <div class="rightGrip"></div>
-          </div>
         </div>
-      </div>
-      <div class="col-md-4 col-sm-4 col-xs-4 text-right form-group top30">
-        <button type="submit" class="border_radius btn-yellow text-uppercase">Search</button>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="group-button-search">
-          <a data-toggle="collapse" href=".html" class="more-filter">
-            <i class="fa fa-plus text-1" aria-hidden="true"></i><i class="fa fa-minus text-2 hide" aria-hidden="true"></i>
-            <div class="text-1">Show more search options</div>
-            <div class="text-2 hide">less more search options</div>
-          </a>
-        </div>
-        <div class="search-propertie-filters collapse">
-          <div class="container-2">
-            <div class="row">
-              <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="search-form-group white bottom10">
-                  <input type="checkbox" name="check-box" />
-                  <span>Features</span>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="search-form-group white bottom10">
-                  <input type="checkbox" name="check-box" />
-                  <span>Balcony</span>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="search-form-group white bottom10">
-                  <input type="checkbox" name="check-box" />
-                  <span>Gas Heat</span>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="search-form-group white bottom10">
-                  <input type="checkbox" name="check-box" />
-                  <span>Washer, Dryer</span>
+        <div class="col-md-3 col-sm-6">
+          <div class="row search-2">
+            <div class="col-md-6 col-sm-6">
+              <div class="single-query form-group">
+                <div class="intro">
+                  <select>
+                    <option class="active">Min Beds</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                  </select>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="search-form-group white bottom10">
-                  <input type="checkbox" name="check-box" />
-                  <span>TV Cable</span>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="search-form-group white bottom10">
-                  <input type="checkbox" name="check-box" />
-                  <span>Swimming Pool</span>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="search-form-group white bottom10">
-                  <input type="checkbox" name="check-box" />
-                  <span>Home Theater</span>
+            <div class="col-md-6 col-sm-6">
+              <div class="single-query form-group">
+                <div class="intro">
+                  <select>
+                    <option class="active">Min Baths</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                  </select>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="single-query form-group">
+                <input type="text" class="keyword-input" placeholder="Min Area (sq ft)">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="single-query form-group">
+                <input type="text" class="keyword-input" placeholder="Max Area (sq ft)">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="single-query-slider">
+                <label>Price Range:</label>
+                <div class="price text-right">
+                  <span>$</span>
+                  <div class="leftLabel"></div>
+                  <span>to $</span>
+                  <div class="rightLabel"></div>
+                </div>
+                <div data-range_min="0" data-range_max="1500000" data-cur_min="0" data-cur_max="1500000" class="nstSlider">
+                  <div class="bar"></div>
+                  <div class="leftGrip"></div>
+                  <div class="rightGrip"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 text-right form-group">
+              <button type="submit" class="btn-blue border_radius top15">Search</button>
+            </div>
+          </div>
+        </div>
+      </form>
     </div>
-  </form>
-</div>
+  </div>
+</section>
 
-
+<!--Advance Search-->
 
 
 <!-- Gallery -->

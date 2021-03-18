@@ -1,22 +1,6 @@
 @extends('frontend.layouts.access-layout')
 @section('content')
-<!-- Page Banner Start-->
-<section class="page-banner padding">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <h1 class="text-uppercase">Login</h1>
-        <p>Serving you since 1999. Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
-        <ol class="breadcrumb text-center">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Pages</a></li>
-          <li class="active">Login</li>
-        </ol>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Page Banner End --> 
+
 
 
 <!-- Login -->
@@ -29,7 +13,7 @@
           <!-- Nav tabs -->
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Login</a></li>
-            <li role="presentation"><a href="register" aria-controls="profile" role="tab" data-toggle="tab">Register</a></li>
+            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Register</a></li>
           </ul>
           <!-- Tab panes -->
           <div class="tab-content padding_half">

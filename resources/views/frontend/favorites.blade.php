@@ -1,22 +1,6 @@
 @extends('frontend.layouts.default-layout')
 @section('content')
-<!-- Page Banner Start-->
-<section class="page-banner padding">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <h1 class="text-uppercase">Favorite properties</h1>
-        <p>Serving you since 1999. Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
-        <ol class="breadcrumb text-center">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Pages</a></li>
-          <li class="active">Favorite properties</li>
-        </ol>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Page Banner End -->
+
 
 
 
