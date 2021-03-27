@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('home');
 })->name('home');
 // Route::get('/','HomeController@index')->name('home');
 // Route::get('/getcode','HomeController@getCode');
@@ -34,6 +34,45 @@ Route::get('/myproperty', function () {
 Route::get('/profile', function () {
     return view('frontend.profile');
 });
+Route::get('/agents', function () {
+    return view('frontend.agents');
+});
+Route::get('/agentprofile', function () {
+    return view('frontend.agentprofile');
+});
+Route::get('/properties1', function () {
+    return view('frontend.properties1');
+});
+Route::get('/sale', function () {
+    return view('frontend.sale');
+});
+Route::get('/rent', function () {
+    return view('frontend.rent');
+});
+Route::get('/news', function () {
+    return view('frontend.news');
+});
+Route::get('/testimonial', function () {
+    return view('frontend.testimonial');
+});
+Route::get('/faq', function () {
+    return view('frontend.faq');
+});
+Route::get('/contact', function () {
+    return view('frontend.contact');
+});
 Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

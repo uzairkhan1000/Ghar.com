@@ -1,82 +1,73 @@
-@extends('frontend.layouts.access-layout')
+@extends('layouts.app')
+
 @section('content')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">{{ __('Login') }}</div>
 
+                <div class="card-body">
+                    <form method="POST" action="{{ route('login') }}">
+                        @csrf
 
+                        <div class="form-group row">
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
-<!-- Login -->
-<section id="login" class="padding">
-  <div class="container">
-    <h3 class="hidden">hidden</h3>
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <div class="profile-login">
-          <!-- Nav tabs -->
-          <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Login</a></li>
-            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Register</a></li>
-          </ul>
-          <!-- Tab panes -->
-          <div class="tab-content padding_half">
-            <div role="tabpanel" class="tab-pane fade in active" id="home">
-              <div class="agent-p-form">
-                <form action="#" class="callus clearfix">
-                  <div class="single-query form-group col-sm-12">
-                    <input type="text" class="keyword-input" placeholder="username">
-                  </div>
-                  <div class="single-query form-group  col-sm-12">
-                    <input type="text" class="keyword-input" placeholder="Email Address">
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <div class="col-sm-6">
-                        <div class="search-form-group white form-group text-left">
-                          <div class="check-box-2"><i><input type="checkbox" name="check-box"></i></div>
-                          <span>Remember Me</span>
+                            <div class="col-md-6">
+                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+
+                                @error('email')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
                         </div>
-                      </div>
-                      <div class="col-sm-6 text-right">
-                        <a href="#" class="lost-pass">Lost your password?</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class=" col-sm-12">
-                    <input type="submit" value="submit now" class="btn-slide border_radius"> 
-                  </div>
-                </form>
-              </div>
+
+                        <div class="form-group row">
+                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+
+                                @error('password')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-6 offset-md-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+
+                                    <label class="form-check-label" for="remember">
+                                        {{ __('Remember Me') }}
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-0">
+                            <div class="col-md-8 offset-md-4">
+                                <button type="submit" class="btn btn-primary">
+                                    {{ __('Login') }}
+                                </button>
+
+                                @if (Route::has('password.request'))
+                                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                                        {{ __('Forgot Your Password?') }}
+                                    </a>
+                                @endif
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div role="tabpanel" class="tab-pane fade" id="profile">
-              <div class="agent-p-form">
-                <form class="callus clearfix">
-                  <div class="single-query col-sm-12 form-group">
-                    <input type="text" class="keyword-input" placeholder="username" required>
-                  </div>
-                  <div class="single-query col-sm-12 form-group">
-                    <input type="text" class="keyword-input" placeholder="Email Address">
-                  </div>
-                  <div class="single-query col-sm-12 form-group">
-                    <input type="password" class="keyword-input" placeholder="Password">
-                  </div>
-                  <div class="single-query col-sm-12 form-group">
-                    <input type="password" class="keyword-input" placeholder="Confirm  Password" readonly>
-                  </div>
-                  <div class="search-form-group white col-sm-12 form-group text-left">
-                    <div class="check-box-2"><i><input type="checkbox" name="check-box"></i></div>
-                    <span>Receive Newsletter</span>
-                  </div>
-                  <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                    <div class="query-submit-button">
-                      <input type="submit" value="Creat an Account" class="btn-slide">
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
-</section>
-<!-- Login end -->
+</div>
 @endsection

@@ -3738,9 +3738,9 @@ h1.bold-text{
 }
 #login .profile-login .nav-tabs li a{border-radius:0;}
 #login .profile-login ul li a {
-  background: #fff;
-  font-size: 18px;
   
+  font-size: 18px;
+  color:#fff;
   width:221px;
   max-width:100%;
   line-height:46px;
@@ -3749,12 +3749,12 @@ h1.bold-text{
   display:block;
   padding:0;
 }
-#login .profile-login ul .active > a {
+/* #login .profile-login ul .active > a {
 	color:#fff;
 	border:none;
 	border-radius:0;
 	background:#1F3F81;
-}
+} */
 #login .profile-login .nav-tabs {
   border:none;
 }
@@ -4274,5 +4274,9 @@ ul.social_share {
   font-size: 12px;
 }
 }
-
+/* Uzair Styling */
+.signup
+{
+  color:#fff;
+}
 

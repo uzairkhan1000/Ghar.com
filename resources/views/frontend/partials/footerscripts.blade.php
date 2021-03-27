@@ -20,3 +20,5 @@
 <script src="js/revolution.extension.video.min.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/functions.js"></script>
+<script src="js/google-map.js"></script> 
+<script src="js/gmaps.js.js"></script>
