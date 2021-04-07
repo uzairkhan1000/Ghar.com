@@ -12,7 +12,37 @@
       <li><a href="submit"><i class="icon-icons215"></i>Submit Property</a></li>
       <li><a href="myproperty"><i class="icon-icons215"></i>My Property</a></li>
       <li><a href="profile"><i class="icon-icons230"></i>Profile</a></li>
-      <li><a href="login"><i class="icon-icons179"></i>Login / Register</a></li>
+      @guest
+                            @if (Route::has('login'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                </li>
+                            @endif
+                            
+                            @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                </li>
+                            @endif
+                        @else
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }}
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
+                        @endguest
           </ul>
         </div>
       </div>
@@ -21,8 +51,8 @@
 </div>
 <!-- Header 1 ends -->
 
-<!--Header-->
-<div id="mainMenuBarAnchor"></div>
+<!-- Header-->
+<!-- <div id="mainMenuBarAnchor"></div>
 <header class="white_header">
   <nav class="navbar navbar-default bootsnav">
     <div class="container">
@@ -83,5 +113,5 @@
       </div>
     </div>
   </nav>
-</header>
-<!--Header Ends-->
+</header> -->
+<!--Header Ends -->
