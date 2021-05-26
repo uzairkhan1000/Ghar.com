@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\http\Controllers\PropertyController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,12 +26,12 @@ Route::get('/aboutus', function () {
 Route::get('/favorites', function () {
     return view('frontend.favorites');
 });
-Route::get('/submit', function () {
-    return view('frontend.submit');
-});
+Route::view('submit','frontend.submit');
+Route::post('submit' ,'PropertyController@addProperty')->name('addproperty');
+
 Route::get('/myproperty', function () {
     return view('frontend.myproperty');
-});
+})->name('myproperty');
 Route::get('/profile', function () {
     return view('frontend.profile');
 });
@@ -62,5 +63,7 @@ Route::get('/contact', function () {
     return view('frontend.contact');
 });
 Auth::routes();
+
+
 
 
