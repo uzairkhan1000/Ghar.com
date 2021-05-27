@@ -196,9 +196,9 @@
                         </div>
                         <div class="col-sm-12">
                             <h3 class="bottom15 margin40">Propertie Description </h3>
-                            <textarea id="txtEditor"></textarea>
+                            <textarea name="description" id="txtEditor"></textarea>
                         </div>
-                        <div class="col-sm-12">
+                        <!-- <div class="col-sm-12">
                             <h3 class="bottom15 margin40">Quick Summary</h3>
                             <div class="table-responsive summery_table">
                                 <table class="table">
@@ -266,8 +266,8 @@
                                 </table>
                                 <a href="#." class="add-new"><i class="fa fa-plus"></i> Add New</a>
                             </div>
-                        </div>
-                        <div class="col-sm-12">
+                        </div> -->
+                        <!-- <div class="col-sm-12">
                             <h3 class="bottom15 margin40">Property Features</h3>
                             <div class="search-propertie-filters">
                                 <div class="container-2">
@@ -342,23 +342,23 @@
 
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
-                        <div class="col-sm-12">
+                        <!-- <div class="col-sm-12">
                             <h3 class="bottom15 margin40">Video Presentation</h3>
                             <div class="single-query form-group bottom15">
                                 <label>Vimeo or Youtube URL</label>
                                 <input type="text" class="keyword-input" placeholder="https://vimeo.com/">
                             </div>
-                        </div>
-                        <div class="col-sm-12">
+                        </div> -->
+                        <!-- <div class="col-sm-12">
                             <h3 class="bottom15 margin40">Place on Map</h3>
                             <div class="single-query form-group bottom15">
                                 <label>Property Address</label>
                                 <input type="text" class="keyword-input" placeholder="Enter a Location">
                             </div>
                             <div id="single_map"></div>
-                        </div>
+                        </div> -->
                         <div class="col-md-4">
                             <button type="submit" class="btn-blue border_radius margin40">submit property</button>
                         </div>

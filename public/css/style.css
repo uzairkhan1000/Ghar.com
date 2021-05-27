@@ -1339,6 +1339,7 @@ nav.navbar.bootsnav ul.dropdown-menu.megamenu-content.bg .col-menu{
 }
 .callus textarea{
 	min-height:160px;
+  width:100%;
 	resize:none;
 }
 .callus .btn-blue {

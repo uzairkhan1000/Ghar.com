@@ -33,7 +33,8 @@
       <div class="col-md-8">
         <div class="profile-form">
           <div class="row">
-            <form class="callus">
+            <form class="callus" action="{{Route('addprofile')}}" method="post">
+            @csrf
               <div class="col-sm-4">
                 <div class="single-query">
                   <label>Your Name:</label>
@@ -41,7 +42,7 @@
               </div>
               <div class="col-sm-8">
                 <div class="single-query form-group">
-                  <input type="text" placeholder="Bohdan Kononets" class="keyword-input">
+                  <input type="text" name="name" class="keyword-input">
                 </div>
               </div>
               <div class="col-sm-4">
@@ -51,7 +52,7 @@
               </div>
               <div class="col-sm-8">
                 <div class="single-query form-group">
-                  <input type="text" placeholder="(+01) 34 56 7890" class="keyword-input">
+                  <input type="text" name="phone" placeholder="(+01) 34 56 7890" class="keyword-input">
                 </div>
               </div>
               <div class="col-sm-4">
@@ -95,7 +96,7 @@
                 </div>
               </div>
               <div class="col-md-12 col-sm-12 col-xs-12 text-right">
-              <a class="btn-blue border_radius" href="#.">Save Changes</a>
+              <button type="submit" class="btn-blue border_radius" href="#.">Save Changes</button>
             </div>
             </form>
           </div>

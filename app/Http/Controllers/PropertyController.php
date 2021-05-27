@@ -7,7 +7,7 @@ use App\Models\property;
 use Auth;
 class PropertyController extends Controller
 {
-    //
+    
     function addProperty(Request $req)
     {
         // dd($req);
@@ -20,13 +20,14 @@ class PropertyController extends Controller
         $property->location=$req->location;
         $property->status=$req->status;
         $property->price=$req->price;
-        $property->image=$req->image;
+        $property->images=$req->image;
         $property->size=$req->size;
         $property->bedrooms=$req->bedrooms;
         $property->bathrooms=$req->bathrooms;
         $property->tv_lounges=$req->tv_lounges;
         $property->garages=$req->garages;
         $property->swimming_pools=$req->swimming_pools;
+        $property->description=$req->description;
 
 
 

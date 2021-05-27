@@ -32,9 +32,9 @@ Route::post('submit' ,'PropertyController@addProperty')->name('addproperty');
 Route::get('/myproperty', function () {
     return view('frontend.myproperty');
 })->name('myproperty');
-Route::get('/profile', function () {
-    return view('frontend.profile');
-});
+
+Route::view('/profile','frontend.profile');
+Route::post('profile','ProfileController@addProfile')->name('addprofile');
 Route::get('/agents', function () {
     return view('frontend.agents');
 });
