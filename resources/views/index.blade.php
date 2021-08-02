@@ -22,7 +22,7 @@
           data-responsive_offset="on" 
           data-transform_idle="o:1;"
           data-transform_in="x:-50px;opacity:0;s:2000;e:Power3.easeOut;" 
-		  data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;">
+		      data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;">
           <div class="price">For Rent</div>
           <h2>Family House in Hudson</h2>
           <p class="bottom30">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam power 
@@ -109,7 +109,7 @@
 </div>
 
 
-<!--Advance Search-->
+{{-- <!--Advance Search-->
 <section class="property-query-area bg_light">
   <div class="container">
     <div class="row">
@@ -137,6 +137,8 @@
         <div class="col-md-3 col-sm-6">
           <div class="single-query form-group">
             <div class="intro">
+          
+
               <select>
                 <option class="active">Property Type</option>
                 <option>All areas</option>
@@ -240,390 +242,73 @@
   </div>
 </section>
 
-<!--Advance Search-->
-
+<!--Advance Search--> --}}
 
 <!-- Gallery -->
 <section id="property" class="padding bg_gallery">
   <div class="container">
     <div class="row">
       <div class="col-sm-12 text-center">
-        <h2 class="uppercase">real estate properties</h2>
+        <h2 class="uppercase" id="1">real estate properties</h2>
         <p class="heading_space">We have Properties in these Areas View a list of Featured Properties.</p>
       </div>
     </div>
-    <div class="clearfix">
+    {{-- <div class="clearfix">
       <div id="filters-property" class="cbp-l-filters-button text-center">
         <div data-filter=".latest" class="cbp-filter-item-active cbp-filter-item">LATEST</div>
         <div data-filter=".sale" class="cbp-filter-item">SALE</div>        
         <div data-filter=".rent" class="cbp-filter-item">RENT</div>
       </div>
-    </div>
+    </div> --}}
     <div id="property-gallery" class="cbp listing1">
-      <div class="cbp-item latest sale">
+      
+  
+    @foreach($properties as $property)
+    
+    
+        <div class="cbp-item latest rent">
+        
         <div class="property_item">
           <div class="image">
-            <a href="property_detail1.html"><img src="images/listing1.jpg" alt="latest property" class="img-responsive"></a>
+            <a href="{{route('property_details',$property->id)}}"><img src="./uploads/properties/{{$property->images}}" alt="latest property" class="img-responsive"></a>
             <div class="price clearfix"> 
-              <span class="tag pull-right">$8,600 Per Month</span>
+              <span class="tag pull-right"> Per Month</span>
             </div>
-            <span class="tag_t">For Sale</span> 
-            <span class="tag_l">Featured</span>
-          </div>
-          <div class="proerty_content">
-            <div class="proerty_text">
-              <h3 class="captlize"><a href="property_detail1.html">Park avenue apartment</a></h3>
-              <p>45 Regent Street, London, UK</p>
-            </div>
-            <div class="property_meta transparent"> 
-              <span><i class="icon-select-an-objecto-tool"></i>4800 sq ft</span> 
-              <span><i class="icon-bed"></i>2 Office Rooms</span> 
-              <span><i class="icon-safety-shower"></i>1 Bathroom</span>   
-            </div>
-            <div class="property_meta transparent bottom30">
-              <span><i class="icon-old-television"></i>TV Lounge</span>
-              <span><i class="icon-garage"></i>1 Garage</span>
-              <span></span>
-            </div>
-            <div class="favroute clearfix">
-              <p><i class="icon-calendar2"></i>&nbsp;5 Days ago </p>
-              <ul class="pull-right">
-                <li><a href="javascript:void(0)"><i class="icon-like"></i></a></li>
-                <li><a href="#seventy" class="share_expender" data-toggle="collapse"><i class="icon-share3"></i></a></li>
-              </ul>
-            </div>
-            <div class="toggle_share collapse" id="seventy">
-              <ul>
-                <li><a href="javascript:void(0)" class="facebook"><i class="icon-facebook-1"></i> Facebook</a></li>
-                <li><a href="javascript:void(0)" class="twitter"><i class="icon-twitter-1"></i> Twitter</a></li>
-                <li><a href="javascript:void(0)" class="vimo"><i class="icon-vimeo3"></i> Vimeo</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="cbp-item latest rent">
-        <div class="property_item">
-          <div class="image">
-            <a href="property_detail2.html"><img src="images/listing2.jpg" alt="latest property" class="img-responsive"></a>
-            <div class="price clearfix"> 
-              <span class="tag pull-right">$8,600 Per Month</span>
-            </div>
-            <span class="tag_t">For Rent</span> 
-          </div>
-          <div class="proerty_content">
-            <div class="proerty_text">
-              <h3 class="captlize"><a href="property_detail2.html">Park avenue apartment</a></h3>
-              <p>45 Regent Street, London, UK</p>
-            </div>
-            <div class="property_meta transparent"> 
-              <span><i class="icon-select-an-objecto-tool"></i>4800 sq ft</span> 
-              <span><i class="icon-bed"></i>2 Office Rooms</span> 
-              <span><i class="icon-safety-shower"></i>1 Bathroom</span>   
-            </div>
-            <div class="property_meta transparent bottom30">
-              <span><i class="icon-old-television"></i>TV Lounge</span>
-              <span><i class="icon-garage"></i>1 Garage</span>
-              <span></span>
-            </div>
-            <div class="favroute clearfix">
-              <p><i class="icon-calendar2"></i>&nbsp;5 Days ago </p>
-              <ul class="pull-right">
-                <li><a href="javascript:void(0)"><i class="icon-like"></i></a></li>
-                <li><a href="#six" class="share_expender" data-toggle="collapse"><i class="icon-share3"></i></a></li>
-              </ul>
-            </div>
-            <div class="toggle_share collapse" id="six">
-              <ul>
-                <li><a href="javascript:void(0)" class="facebook"><i class="icon-facebook-1"></i> Facebook</a></li>
-                <li><a href="javascript:void(0)" class="twitter"><i class="icon-twitter-1"></i> Twitter</a></li>
-                <li><a href="javascript:void(0)" class="vimo"><i class="icon-vimeo3"></i> Vimeo</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="cbp-item latest sale">
-        <div class="property_item">
-          <div class="image">
-            <a href="property_detail3.html"><img src="images/listing3.jpg" alt="latest property" class="img-responsive"></a>
-            <div class="price clearfix"> 
-              <span class="tag pull-right">$8,600 Per Month</span>
-            </div>
-            <span class="tag_t">For Sale</span>
-            <span class="tag_l">Featured</span> 
-          </div>
-          <div class="proerty_content">
-            <div class="proerty_text">
-              <h3 class="captlize"><a href="property_detail3.html">Park avenue apartment</a></h3>
-              <p>45 Regent Street, London, UK</p>
-            </div>
-            <div class="property_meta transparent"> 
-              <span><i class="icon-select-an-objecto-tool"></i>4800 sq ft</span> 
-              <span><i class="icon-bed"></i>2 Office Rooms</span> 
-              <span><i class="icon-safety-shower"></i>1 Bathroom</span>   
-            </div>
-            <div class="property_meta transparent bottom30">
-              <span><i class="icon-old-television"></i>TV Lounge</span>
-              <span><i class="icon-garage"></i>1 Garage</span>
-              <span></span>
-            </div>
-            <div class="favroute clearfix">
-              <p><i class="icon-calendar2"></i>&nbsp;5 Days ago </p>
-              <ul class="pull-right">
-                <li><a href="javascript:void(0)"><i class="icon-like"></i></a></li>
-                <li><a href="#three" class="share_expender" data-toggle="collapse"><i class="icon-share3"></i></a></li>
-              </ul>
-            </div>
-            <div class="toggle_share collapse" id="three">
-              <ul>
-                <li><a href="javascript:void(0)" class="facebook"><i class="icon-facebook-1"></i> Facebook</a></li>
-                <li><a href="javascript:void(0)" class="twitter"><i class="icon-twitter-1"></i> Twitter</a></li>
-                <li><a href="javascript:void(0)" class="vimo"><i class="icon-vimeo3"></i> Vimeo</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="cbp-item latest rent">
-        <div class="property_item">
-          <div class="image">
-            <a href="property_detail1.html"><img src="images/listing4.jpg" alt="latest property" class="img-responsive"></a>
-            <div class="price clearfix"> 
-              <span class="tag pull-right">$8,600 Per Month</span>
-            </div>
-            <span class="tag_t">For Rent</span> 
-          </div>
-          <div class="proerty_content">
-            <div class="proerty_text">
-              <h3 class="captlize"><a href="property_detail1.html">Park avenue apartment</a></h3>
-              <p>45 Regent Street, London, UK</p>
-            </div>
-            <div class="property_meta transparent"> 
-              <span><i class="icon-select-an-objecto-tool"></i>4800 sq ft</span> 
-              <span><i class="icon-bed"></i>2 Office Rooms</span> 
-              <span><i class="icon-safety-shower"></i>1 Bathroom</span>   
-            </div>
-            <div class="property_meta transparent bottom30">
-              <span><i class="icon-old-television"></i>TV Lounge</span>
-              <span><i class="icon-garage"></i>1 Garage</span>
-              <span></span>
-            </div>
-            <div class="favroute clearfix">
-              <p><i class="icon-calendar2"></i>&nbsp;5 Days ago </p>
-              <ul class="pull-right">
-                <li><a href="javascript:void(0)"><i class="icon-like"></i></a></li>
-                <li><a href="#twe" class="share_expender" data-toggle="collapse"><i class="icon-share3"></i></a></li>
-              </ul>
-            </div>
-            <div class="toggle_share collapse" id="twe">
-              <ul>
-                <li><a href="javascript:void(0)" class="facebook"><i class="icon-facebook-1"></i> Facebook</a></li>
-                <li><a href="javascript:void(0)" class="twitter"><i class="icon-twitter-1"></i> Twitter</a></li>
-                <li><a href="javascript:void(0)" class="vimo"><i class="icon-vimeo3"></i> Vimeo</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="cbp-item latest sale">
-        <div class="property_item">
-          <div class="image">
-            <a href="property_detail2.html"><img src="images/listing8.jpg" alt="latest property" class="img-responsive"></a>
-            <div class="price clearfix"> 
-              <span class="solid">Solid Out</span>
-            </div>
-            <span class="tag_t">For Sale</span> 
-          </div>
-          <div class="proerty_content">
-            <div class="proerty_text">
-              <h3 class="captlize"><a href="property_detail2.html">Park avenue apartment</a></h3>
-              <p>45 Regent Street, London, UK</p>
-            </div>
-            <div class="property_meta transparent"> 
-              <span><i class="icon-select-an-objecto-tool"></i>4800 sq ft</span> 
-              <span><i class="icon-bed"></i>2 Office Rooms</span> 
-              <span><i class="icon-safety-shower"></i>1 Bathroom</span>   
-            </div>
-            <div class="property_meta transparent bottom30">
-              <span><i class="icon-old-television"></i>TV Lounge</span>
-              <span><i class="icon-garage"></i>1 Garage</span>
-              <span></span>
-            </div>
-            <div class="favroute clearfix">
-              <p><i class="icon-calendar2"></i>&nbsp;5 Days ago </p>
-              <ul class="pull-right">
-                <li><a href="javascript:void(0)"><i class="icon-like"></i></a></li>
-                <li><a href="#twomore" class="share_expender" data-toggle="collapse"><i class="icon-share3"></i></a></li>
-              </ul>
-            </div>
-            <div class="toggle_share collapse" id="twomore">
-              <ul>
-                <li><a href="javascript:void(0)" class="facebook"><i class="icon-facebook-1"></i> Facebook</a></li>
-                <li><a href="javascript:void(0)" class="twitter"><i class="icon-twitter-1"></i> Twitter</a></li>
-                <li><a href="javascript:void(0)" class="vimo"><i class="icon-vimeo3"></i> Vimeo</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="cbp-item latest sale">
-        <div class="property_item">
-          <div class="image">
-            <a href="property_detail3.html"><img src="images/listing6.jpg" alt="latest property" class="img-responsive"></a>
-            <div class="price clearfix"> 
-              <span class="tag pull-right">$8,600 Per Month</span>
-            </div>
-            <span class="tag_t">For Sale</span>
-            <span class="tag_l">Featured</span> 
-          </div>
-          <div class="proerty_content">
-            <div class="proerty_text">
-              <h3 class="captlize"><a href="property_detail3.html">Park avenue apartment</a></h3>
-              <p>45 Regent Street, London, UK</p>
-            </div>
-            <div class="property_meta transparent"> 
-              <span><i class="icon-select-an-objecto-tool"></i>4800 sq ft</span> 
-              <span><i class="icon-bed"></i>2 Office Rooms</span> 
-              <span><i class="icon-safety-shower"></i>1 Bathroom</span>   
-            </div>
-            <div class="property_meta transparent bottom30">
-              <span><i class="icon-old-television"></i>TV Lounge</span>
-              <span><i class="icon-garage"></i>1 Garage</span>
-              <span></span>
-            </div>
-            <div class="favroute clearfix">
-              <p><i class="icon-calendar2"></i>&nbsp;5 Days ago </p>
-              <ul class="pull-right">
-                <li><a href="javascript:void(0)"><i class="icon-like"></i></a></li>
-                <li><a href="#one" class="share_expender" data-toggle="collapse"><i class="icon-share3"></i></a></li>
-              </ul>
-            </div>
-            <div class="toggle_share collapse" id="one">
-              <ul>
-                <li><a href="javascript:void(0)" class="facebook"><i class="icon-facebook-1"></i> Facebook</a></li>
-                <li><a href="javascript:void(0)" class="twitter"><i class="icon-twitter-1"></i> Twitter</a></li>
-                <li><a href="javascript:void(0)" class="vimo"><i class="icon-vimeo3"></i> Vimeo</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="cbp-item latest rent">
-        <div class="property_item">
-          <div class="image">
-            <a href="property_detail1.html"><img src="images/listing7.jpg" alt="latest property" class="img-responsive"></a>
-            <div class="price clearfix"> 
-              <span class="tag pull-right">$8,600 Per Month</span>
-            </div>
-            <span class="tag_t">For Rent</span> 
-            <span class="tag_l">Featured</span>
-          </div>
-          <div class="proerty_content">
-            <div class="proerty_text">
-              <h3 class="captlize"><a href="property_detail1.html">Park avenue apartment</a></h3>
-              <p>45 Regent Street, London, UK</p>
-            </div>
-            <div class="property_meta transparent"> 
-              <span><i class="icon-select-an-objecto-tool"></i>4800 sq ft</span> 
-              <span><i class="icon-bed"></i>2 Office Rooms</span> 
-              <span><i class="icon-safety-shower"></i>1 Bathroom</span>   
-            </div>
-            <div class="property_meta transparent bottom30">
-              <span><i class="icon-old-television"></i>TV Lounge</span>
-              <span><i class="icon-garage"></i>1 Garage</span>
-              <span></span>
-            </div>
-            <div class="favroute clearfix">
-              <p><i class="icon-calendar2"></i>&nbsp;5 Days ago </p>
-              <ul class="pull-right">
-                <li><a href="javascript:void(0)"><i class="icon-like"></i></a></li>
-                <li><a href="#seven" class="share_expender" data-toggle="collapse"><i class="icon-share3"></i></a></li>
-              </ul>
-            </div>
-            <div class="toggle_share collapse" id="seven">
-              <ul>
-                <li><a href="javascript:void(0)" class="facebook"><i class="icon-facebook-1"></i> Facebook</a></li>
-                <li><a href="javascript:void(0)" class="twitter"><i class="icon-twitter-1"></i> Twitter</a></li>
-                <li><a href="javascript:void(0)" class="vimo"><i class="icon-vimeo3"></i> Vimeo</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="cbp-item latest sale">
-        <div class="property_item">
-          <div class="image">
-            <a href="property_detail2.html"><img src="images/listing5.jpg" alt="latest property" class="img-responsive"></a>
-            <div class="price clearfix"> 
-              <span class="tag pull-right">$8,600 Per Month</span>
-            </div>
-            <span class="tag_t">For Sale</span> 
-            <span class="tag_l">Featured</span>
-          </div>
-          <div class="proerty_content">
-            <div class="proerty_text">
-              <h3 class="captlize"><a href="property_detail2.html">Park avenue apartment</a></h3>
-              <p>45 Regent Street, London, UK</p>
-            </div>
-            <div class="property_meta transparent"> 
-              <span><i class="icon-select-an-objecto-tool"></i>4800 sq ft</span> 
-              <span><i class="icon-bed"></i>2 Office Rooms</span> 
-              <span><i class="icon-safety-shower"></i>1 Bathroom</span>   
-            </div>
-            <div class="property_meta transparent bottom30">
-              <span><i class="icon-old-television"></i>TV Lounge</span>
-              <span><i class="icon-garage"></i>1 Garage</span>
-              <span></span>
-            </div>
-            <div class="favroute clearfix">
-              <p><i class="icon-calendar2"></i>&nbsp;5 Days ago </p>
-              <ul class="pull-right">
-                <li><a href="javascript:void(0)"><i class="icon-like"></i></a></li>
-                <li><a href="#onemore" class="share_expender" data-toggle="collapse"><i class="icon-share3"></i></a></li>
-              </ul>
-            </div>
-            <div class="toggle_share collapse" id="onemore">
-              <ul>
-                <li><a href="javascript:void(0)" class="facebook"><i class="icon-facebook-1"></i> Facebook</a></li>
-                <li><a href="javascript:void(0)" class="twitter"><i class="icon-twitter-1"></i> Twitter</a></li>
-                <li><a href="javascript:void(0)" class="vimo"><i class="icon-vimeo3"></i> Vimeo</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="cbp-item latest sale">
-        <div class="property_item">
-          <div class="image">
-            <a href="property_detail3.html"><img src="images/listing9.jpg" alt="latest property" class="img-responsive"></a>
-            <div class="price clearfix"> 
-              <span class="tag pull-right">$8,600 Per Month</span>
-            </div>
-            <span class="tag_t">For Sale</span> 
+            <span class="tag_t">For {{$property->status}}</span> 
             </div>
           <div class="proerty_content">
             <div class="proerty_text">
-              <h3 class="captlize"><a href="property_detail3.html">Park avenue apartment</a></h3>
-              <p>45 Regent Street, London, UK</p>
+              <h3 class="captlize"><a href="property_detail3.html">{{$property->title}}</a></h3>
+              <p>{{$property->address}}</p>
             </div>
             <div class="property_meta transparent"> 
-              <span><i class="icon-select-an-objecto-tool"></i>4800 sq ft</span> 
-              <span><i class="icon-bed"></i>2 Office Rooms</span> 
-              <span><i class="icon-safety-shower"></i>1 Bathroom</span>   
+              <span><i class="icon-select-an-objecto-tool"></i>{{$property->size}} sq ft</span> 
+              <span><i class="icon-bed"></i>{{$property->bedrooms}} Office Rooms</span> 
+              <span><i class="icon-safety-shower"></i>{{$property->bathrooms}} Bathroom</span>   
             </div>
             <div class="property_meta transparent bottom30">
-              <span><i class="icon-old-television"></i>TV Lounge</span>
-              <span><i class="icon-garage"></i>1 Garage</span>
+              <span><i class="icon-old-television"></i>{{$property->tv_lounges}} TV Lounge</span>
+              <span><i class="icon-garage"></i>{{$property->garages}} Garage</span>
               <span></span>
             </div>
             <div class="favroute clearfix">
-              <p><i class="icon-calendar2"></i>&nbsp;5 Days ago </p>
+              <p><i class="icon-calendar2"></i>&nbsp;{{$property->created_at}} </p>
               <ul class="pull-right">
-                <li><a href="javascript:void(0)"><i class="icon-like"></i></a></li>
-                <li><a href="#sixy" class="share_expender" data-toggle="collapse"><i class="icon-share3"></i></a></li>
+                @if(!Auth::user())
+                <li><a href="login"><i class=" bi-heart "></i></a></li>
+                @else
+                @if(empty($favproperties))
+                <li><a href="{{route('addfavourite',$property->id)}}"><i  class=" bi-heart "  ></i></a></li>
+                
+                @else
+                <li><a href="{{route('addfavourite',$property->id)}}"><i  class=" @if(in_array($property->id,$favproperties)) like bi bi-heart-fill  @else bi-heart @endif  "  ></i></a></li>
+                @endif
+                @endif
+                
+                {{-- <li><a href="#sixy" class="share_expender" data-toggle="collapse"><i class="icon-share3"></i></a></li> --}}
               </ul>
             </div>
+           
             <div class="toggle_share collapse" id="sixy">
               <ul>
                 <li><a href="javascript:void(0)" class="facebook"><i class="icon-facebook-1"></i> Facebook</a></li>
@@ -633,14 +318,23 @@
             </div>
           </div>
         </div>
+        
       </div>
-    </div>
+      
+      @endforeach
+      </div>
+      
     <div class="col-sm-12 text-center top20">
-       <a href="listing1.html" class="btn-dark border_radius uppercase margin40">more listings</a>
+      {{-- {{ $properties->links() }} --}}
+
+       <a href="{{$properties->fragment('1')->nextPageUrl()}}" id="btn" class="btn-dark border_radius uppercase margin40" >more listings</a>
     </div>
+    
+    
   </div>
 </section>
-<!-- Gallery End -->
+
+
 
 
 <!--Deals-->

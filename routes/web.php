@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\http\Controllers\PropertyController;
+use App\http\Controllers\Fav_Property_Controller;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,26 +16,41 @@ use App\http\Controllers\PropertyController;
 */
 
 Route::get('/', function () {
-    return view('home');
-})->name('home');
-// Route::get('/','HomeController@index')->name('home');
-// Route::get('/getcode','HomeController@getCode');
+    return view('index');
+})->name('index');
+Route::get('/','PropertyController@topProperties');
+
+
+
 
 Route::get('/aboutus', function () {
     return view('frontend.aboutus');
 });
-Route::get('/favorites', function () {
-    return view('frontend.favorites');
-});
+
+
+// Favourites
+Route::view('/favorites','frontend.favorites');
+Route::get('/favorites','Fav_Property_Controller@showfavProperties');
+
+
+
 Route::view('submit','frontend.submit');
 Route::post('submit' ,'PropertyController@addProperty')->name('addproperty');
 
 Route::get('/myproperty', function () {
     return view('frontend.myproperty');
 })->name('myproperty');
+Route::get('property_delete.{id}' , 'PropertyController@delete');
+Route::get('myproperty' , 'PropertyController@properties');
+Route::get('edit_property.{id}','PropertyController@edit');
+Route::post('edit_property.{id}','PropertyController@updateProperty')->name('updateProperty');
 
-Route::view('/profile','frontend.profile');
+
+Route::view('profile','frontend.profile');
 Route::post('profile','ProfileController@addProfile')->name('addprofile');
+Route::get('profile','profilepicture@profile');
+Route::post('profile_pic','profilepicture@profile_pic')->name('profile_pic');
+
 Route::get('/agents', function () {
     return view('frontend.agents');
 });
@@ -62,8 +78,25 @@ Route::get('/faq', function () {
 Route::get('/contact', function () {
     return view('frontend.contact');
 });
+// Fav_property
+
+Route::get('addFavourite/{id}','Fav_Property_Controller@addFavourite')->name('addfavourite');
+Route::get('delete.{id}','Fav_Property_Controller@delete');
+
+
 Auth::routes();
 
 
 
+//Property Details
 
+
+Route::get('property_details.{id}','PropertyController@property_details')->name('property_details');
+
+
+
+//Admin Panel
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

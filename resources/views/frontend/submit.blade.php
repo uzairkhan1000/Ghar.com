@@ -7,22 +7,12 @@
 <!-- My Properties  -->
 <section id="property" class="padding listing1">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <ul class="f-p-links margin_bottom">
-                    <li><a href="profile.html"><i class="icon-icons230"></i>Profile</a></li>
-                    <li><a href="my_properties.html"><i class="icon-icons215"></i> My Properties</a></li>
-                    <li><a href="submit_property.html" class="active"><i class="icon-icons215"></i> Submit Property</a>
-                    </li>
-                    <li><a href="favorite_properties.html"><i class="icon-icons43"></i> Favorite Properties</a></li>
-                    <li><a href="login.html"><i class="icon-lock-open3"></i>Logout</a></li>
-                </ul>
-            </div>
-        </div>
+    @include('frontend.partials.navbar1')
         
         @if(Session::has('status'))
         <div class="row text-center" style="background-color:blue; color:white;">
             <h2>Property Added</h2>
+            
         </div>
         @elseif(Session::has('error'))
         <div class="row text-center" style="background-color:red; color:white;">
@@ -34,7 +24,7 @@
             <div class="col-sm-1 col-md-2"></div>
             <div class="col-sm-10 col-md-8">
                 <h2 class="text-uppercase bottom40">Add Your Property</h2>
-                <form action="{{route('addproperty')}}" method="POST"
+                <form action="{{route('addproperty')}}" method="POST" enctype="multipart/form-data"
                     class="callus clearfix border_radius submit_property">
                     @csrf
                     <div class="row">

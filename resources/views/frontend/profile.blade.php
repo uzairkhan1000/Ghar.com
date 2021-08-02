@@ -8,33 +8,39 @@
 <!-- Profile Start -->
 <section id="agent-2-peperty" class="profile padding">
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <ul class="f-p-links margin_bottom">
-          <li><a href="profile.html" class="active"><i class="icon-icons230"></i>Profile</a></li>
-          <li><a href="my_properties.html"><i class="icon-icons215"></i> My Properties</a></li>
-          <li><a href="submit_property.html"><i class="icon-icons215"></i> Submit Property</a></li>
-          <li><a href="favorite_properties.html"><i class="icon-icons43"></i> Favorite Properties</a></li>
-          <li><a href="login.html"><i class="icon-lock-open3"></i>Logout</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
+  @include('frontend.partials.navbar1')
+  @if(Session::has('status'))
+      <div class="row text-center" style="background-color:blue; color:white;">
+            <h2>Profile Updated</h2>
+        </div>
+      @elseif(Session::has('error'))
+      <div class="row text-center" style="background-color:red; color:white;">
+            <h2>Failed to update</h2>
+        </div>
+      @endif
+      <form method="post" action="{{Route('profile_pic')}}" enctype="multipart/form-data">
+      @csrf
   <div class="container-3">
     <div class="row">
       <div class="col-md-4 col-sm-6 col-xs-12">
         <h2 class="text-uppercase bottom30">my profile</h2>
         <div class="agent-p-img">
-          <img src="images/profile.jpg" class="img-responsive" alt="image"/>
-          <a href="#" class="top10 bottom20">Update Profile Picture</a>
-          <p class="text-center">Minimum 215px x 215px<span>*</span></p>
+        
+          <img src="./uploads/users/{{$user->profile_pic}}" class="img-responsive" alt="image" />
+          
+          <input type="file"  name="profile_pic" class="top10 bottom20 btn-blue border_radius" style="width: -webkit-fill-available;">
+          <button class="btn-blue border_radius" type="submit" style="width: -webkit-fill-available;">Change</button>
+          
         </div>
       </div>
+     
       <div class="col-md-8">
         <div class="profile-form">
           <div class="row">
+          </form>
             <form class="callus" action="{{Route('addprofile')}}" method="post">
             @csrf
+           
               <div class="col-sm-4">
                 <div class="single-query">
                   <label>Your Name:</label>
@@ -42,7 +48,7 @@
               </div>
               <div class="col-sm-8">
                 <div class="single-query form-group">
-                  <input type="text" name="name" class="keyword-input">
+                  <input type="text" Value="{{$user->name}}" name="name" placeholder="{{$user->name}}" class="keyword-input">
                 </div>
               </div>
               <div class="col-sm-4">
@@ -52,7 +58,7 @@
               </div>
               <div class="col-sm-8">
                 <div class="single-query form-group">
-                  <input type="text" name="phone" placeholder="(+01) 34 56 7890" class="keyword-input">
+                  <input type="text" name="phone" Value="{{$user->phone}}" placeholder="{{$user->phone}}" class="keyword-input">
                 </div>
               </div>
               <div class="col-sm-4">
@@ -62,7 +68,7 @@
               </div>
               <div class="col-sm-8">
                 <div class="single-query form-group">
-                  <input type="text" placeholder="(+033) 34 56 7890" class="keyword-input">
+                  <input type="text" name="mobile" Value="{{$user->mobile}}" placeholder="{{$user->mobile}}" class="keyword-input">
                 </div>
               </div>
               <div class="col-sm-4">
@@ -72,7 +78,7 @@
               </div>
               <div class="col-sm-8">
                 <div class="single-query form-group">
-                  <input type="text" placeholder="bohdan@realtyhomes.com" class="keyword-input">
+                  <input type="text" name="email_address" Value="{{$user->email_address}}" placeholder="{{$user->email_address}}" class="keyword-input">
                 </div>
               </div>
               <div class="col-sm-4">
@@ -82,7 +88,7 @@
               </div>
               <div class="col-sm-8">
                 <div class="single-query form-group">
-                  <input type="text" placeholder="bohdan.kononets" class="keyword-input">
+                  <input type="text" name="skype" Value="{{$user->Skype}}" placeholder="{{$user->Skype}}" class="keyword-input">
                 </div>
               </div>
               <div class="col-sm-4">
@@ -92,7 +98,7 @@
               </div>
               <div class="col-sm-8">
                 <div class="single-query form-group">
-                  <textarea placeholder="Write here somthing about yours" class="form-control"></textarea>
+                  <textarea  placeholder="{{$user->about}}" name="about" class="form-control">{{$user->about}}</textarea>
                 </div>
               </div>
               <div class="col-md-12 col-sm-12 col-xs-12 text-right">
@@ -104,58 +110,8 @@
       </div>
     </div>
   </div>
-  <div class="container">
+  {{-- <div class="container">
     <div class="row">
-      <div class="col-md-5 col-sm-6 col-xs-12 profile-form margin40">
-        <h3 class="bottom30 margin40">My Social Network</h3>
-        <div class="row">
-          <form class="callus">
-            <div class="col-sm-4">
-              <div class="single-query">
-                <label>Facebook:</label>
-              </div>
-            </div>
-            <div class="col-sm-8">
-              <div class="single-query form-group">
-                <input type="text" placeholder="http://facebook.com" class="keyword-input">
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="single-query">
-                <label>Twitter:</label>
-              </div>
-            </div>
-            <div class="col-sm-8">
-              <div class="single-query form-group">
-                <input type="text" placeholder="http://twitter.com" class="keyword-input">
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="single-query">
-                <label>Google Plus:</label>
-              </div>
-            </div>
-            <div class="col-sm-8">
-              <div class="single-query form-group">
-                <input type="text" placeholder="http://google-plus.com" class="keyword-input">
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="single-query">
-                <label>Linkedin:</label>
-              </div>
-            </div>
-            <div class="col-sm-8">
-              <div class="single-query form-group">
-                <input type="text" placeholder="http://linkedin.com" class="keyword-input">
-              </div>
-            </div>
-            <div class="col-md-12 col-sm-12 col-xs-12 text-right">
-              <a class="btn-blue border_radius" href="#.">Save Changes</a>
-            </div>
-          </form>
-        </div>
-      </div>
       <div class="col-md-2 hidden-xs"></div>
       <div class="col-md-5 col-sm-6 col-xs-12 profile-form margin40">
         <h3 class=" bottom30 margin40">Change Your Password</h3>
@@ -198,7 +154,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> --}}
 </section>
 <!-- Profile end -->
 

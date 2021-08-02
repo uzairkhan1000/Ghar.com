@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-class User extends Authenticatable
+class User extends \TCG\Voyager\Models\User
 {
     use HasFactory, Notifiable;
 
@@ -44,5 +44,9 @@ class User extends Authenticatable
     public function properties()
     {
         return $this->hasMany(property::class);
+    }
+    public function fav_properties()
+    {
+        return $this->belongsToMany(property::class)->withPivot(['property_id']);
     }
 }
